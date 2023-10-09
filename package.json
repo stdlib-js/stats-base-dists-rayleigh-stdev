@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/stats-base-dists-rayleigh-stdev",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Rayleigh distribution standard deviation.",
   "license": "Apache-2.0",
   "author": {
@@ -40,7 +40,7 @@
     "@stdlib/constants-float64-pi": "^0.1.1",
     "@stdlib/constants-float64-sqrt-two": "^0.1.1",
     "@stdlib/math-base-assert-is-nan": "^0.1.1",
-    "@stdlib/math-base-special-sqrt": "^0.1.0"
+    "@stdlib/math-base-special-sqrt": "^0.1.1"
   },
   "devDependencies": {
     "@stdlib/bench": "^0.1.0",
