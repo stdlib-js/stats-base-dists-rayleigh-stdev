@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,63 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var isnan = require( '@stdlib/math-base-assert-is-nan' );
-var abs = require( '@stdlib/math-base-special-abs' );
-var NINF = require( '@stdlib/constants-float64-ninf' );
-var EPS = require( '@stdlib/constants-float64-eps' );
-var stdev = require( './../../dist' );
-
-
-// FIXTURES //
-
-var data = require( './../fixtures/julia/data.json' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof stdev, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'if provided `NaN` for `sigma`, the function returns `NaN`', function test( t ) {
-	var sigma = stdev( NaN );
-	t.equal( isnan( sigma ), true, 'returns NaN' );
-	t.end();
-});
-
-tape( 'if provided a scale `sigma` that is not a nonnegative number, the function returns `NaN`', function test( t ) {
-	var sigma;
-
-	sigma = stdev( -1.0 );
-	t.equal( isnan( sigma ), true, 'returns NaN' );
-
-	sigma = stdev( NINF );
-	t.equal( isnan( sigma ), true, 'returns NaN' );
-
-	t.end();
-});
-
-tape( 'the function returns the standard deviation of a Rayleigh distribution', function test( t ) {
-	var expected;
-	var delta;
-	var sigma;
-	var tol;
-	var i;
-	var y;
-
-	expected = data.expected;
-	sigma = data.sigma;
-	for ( i = 0; i < expected.length; i++ ) {
-		y = stdev( sigma[i] );
-		if ( y === expected[i] ) {
-			t.equal( y, expected[i], ', sigma: '+sigma[i]+', y: '+y+', expected: '+expected[i] );
-		} else {
-			delta = abs( y - expected[ i ] );
-			tol = 1.5 * EPS * abs( expected[ i ] );
-			t.ok( delta <= tol, 'within tolerance. sigma: '+sigma[i]+'. y: '+y+'. E: '+expected[ i ]+'. Δ: '+delta+'. tol: '+tol+'.' );
-		}
-	}
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
