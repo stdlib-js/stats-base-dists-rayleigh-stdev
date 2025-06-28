@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-16)
+## Unreleased (2025-06-28)
 
 <section class="features">
 
@@ -34,6 +34,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`6aeb7d0`](https://github.com/stdlib-js/stdlib/commit/6aeb7d0058535c3e7cacb2a66eed69e6806af479) - **test:** pass in opts to skip if addon is not available _(by Philipp Burckhardt)_
 -   [`3d16892`](https://github.com/stdlib-js/stdlib/commit/3d168921b5a5a81732a2cd9087a41dbfe25754cb) - **docs:** update related packages sections [(#7369)](https://github.com/stdlib-js/stdlib/pull/7369) _(by stdlib-bot)_
 -   [`7042a3e`](https://github.com/stdlib-js/stdlib/commit/7042a3e7b52b18fbdf77404ca63945cc0a710710) - **feat:** add C implementation for `stats/base/dists/rayleigh/stdev` [(#4314)](https://github.com/stdlib-js/stdlib/pull/4314) _(by Dhruv Arvind Singh, Philipp Burckhardt, stdlib-bot)_
 
