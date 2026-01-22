@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-17)
+## Unreleased (2026-01-22)
 
 <section class="features">
 
@@ -34,6 +34,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`89e6e3f`](https://github.com/stdlib-js/stdlib/commit/89e6e3f78d7a3adb40799b58f51a7d79c298a0bc) - **bench:** update random value generation [(#9855)](https://github.com/stdlib-js/stdlib/pull/9855) _(by Harsh Yadav)_
 -   [`b71d961`](https://github.com/stdlib-js/stdlib/commit/b71d961f103c018065390d2db1118c292be181fa) - **bench:** refactor to use string interpolation in `stats/base/dists/rayleigh/stdev` [(#9788)](https://github.com/stdlib-js/stdlib/pull/9788) _(by Bhargav Dabhade)_
 -   [`88af63a`](https://github.com/stdlib-js/stdlib/commit/88af63aa54165f09b84ef528cadc3dae622ab05a) - **docs:** replace manual `for` loop in examples [(#9444)](https://github.com/stdlib-js/stdlib/pull/9444) _(by Harsh Yadav)_
 -   [`fc438e0`](https://github.com/stdlib-js/stdlib/commit/fc438e0edbad0689d6923d6f3edb959b96597662) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
