@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-17)
+## Unreleased (2026-05-19)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`4589958`](https://github.com/stdlib-js/stdlib/commit/45899588d2b46feadb809778e13c156bc9cae2aa) - **refactor:** use floating-point zero literals in `stats/base/dists/rayleigh` [(#12204)](https://github.com/stdlib-js/stdlib/pull/12204) _(by Philipp Burckhardt)_
 -   [`906bab9`](https://github.com/stdlib-js/stdlib/commit/906bab98b9f33bc8c3a92e58eeafa2942990d5ab) - **docs:** propagate lint and example fixes to `math` and `stats` siblings [(#12146)](https://github.com/stdlib-js/stdlib/pull/12146) _(by Philipp Burckhardt)_
 -   [`f38e8a7`](https://github.com/stdlib-js/stdlib/commit/f38e8a7b433e0e9888eb57c83f4374073089ad85) - **docs:** clean-up parameters in Julia fixtures scripts _(by Philipp Burckhardt)_
 
